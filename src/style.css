@@ -1,23 +1,29 @@
-
 body,
 html {
-    color: #666666;
-    height: 100%;
+    min-height: 100%;
     margin: 0; /* Asegura que no haya márgenes */
     background-color: #020202;
     background-image: url("/noise_giphy.gif");
     background-position: center; /* Centra la imagen de fondo */
     background-size: cover; /* La imagen cubre todo el fondo */
     background-attachment: fixed; /* Fija la imagen cuando se haga scroll */
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
-  background-color: #020202;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.89)), to(rgba(0, 0, 0, 0.95))), url("/noise_giphy.gif");
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.89)), url("/noise_giphy.gif");
-  background-position: 0 0, 50% 50%;
-  background-size: auto, 400px;
+    min-height: 100%;
+    background-color: #020202;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.89)), to(rgba(0, 0, 0, 0.95))), url("/noise_giphy.gif");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.89)), url("/noise_giphy.gif");
+    background-position: 0 0, 50% 50%;
+    background-size: auto, 400px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "League Spartan", sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 1px !important;
 }
