@@ -7,7 +7,7 @@
         <div class="container-button">
             <!-- Condición para mostrar el botón de Join o el de Bienvenida -->
             <button v-if="!user" @click="showModal = true" class="button-waitlist font-league-spartan">JOIN WAITLIST</button>
-            <button v-else class="button-waitlist button-welcome font-league-spartan">
+            <button v-else class="button-waitlist button-welcome font-league-spartan mirror-text">
                 {{ user.name }} <br />
                 GRACIAS POR UNIRTE A THE ANsWER.
             </button>
@@ -62,7 +62,7 @@ export default {
     methods: {
         setUser(newUser) {
             console.log(newUser);
-            
+
             this.user = newUser;
             localStorage.setItem("user", JSON.stringify(newUser));
         },
@@ -114,6 +114,11 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.mirror-text {
+    display: inline-block;
+    transform: scaleX(-1);
+    direction: rtl; /* Asegura que el orden de letras sea correcto */
+}
 
 .font-league-spartan {
     font-family: "League Spartan", sans-serif;
