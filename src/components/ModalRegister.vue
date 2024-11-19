@@ -5,7 +5,7 @@
             class="fixed inset-0 flex items-center justify-center z-50 bg-opacity-95"
             style="z-index: 9999; background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/noise7.gif'); background-size: cover; background-repeat: no-repeat"
         >
-            <div class="w-full max-w-md sm:max-w-lg md:max-w-4xl bg-white rounded-lg shadow-lg flex flex-col sm:flex-row h-full sm:h-3/4 overflow-y-auto">
+            <div class="w-full max-w-md sm:max-w-lg md:max-w-4xl bg-white rounded-lg shadow-lg flex flex-col sm:flex-row h-2/3 sm:h-3/4 overflow-y-auto">
                 <!-- Imagen a la izquierda (solo en pantallas más grandes) -->
                 <div class="hidden sm:block sm:w-1/2 bg-cover bg-center rounded-t-lg sm:rounded-l-lg sm:h-full" :style="{ backgroundImage: 'url(/login-background.jpg)' }"></div>
 
