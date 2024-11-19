@@ -2,7 +2,7 @@
     <ModalLogin :showModal="showModal" @update:showModal="showModal = $event" @update:setUser="setUser($event)" />
     <div class="app-container">
         <div class="header">
-            <img src="/logo_ta_co.gif" alt="Logo" />
+            <img src="/logo_ta_co.webp" alt="Logo" />
         </div>
         <div class="container-button">
             <!-- Condición para mostrar el botón de Join o el de Bienvenida -->
