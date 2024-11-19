@@ -204,6 +204,7 @@ export default {
 
 .countdown {
     margin-top: 40px;
+    padding-bottom: 30px;
     text-align: center;
 }
 
