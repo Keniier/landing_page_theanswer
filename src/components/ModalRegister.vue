@@ -5,14 +5,22 @@
             class="fixed inset-0 flex items-center justify-center z-50 bg-opacity-95"
             style="z-index: 9999; background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/noise7.gif'); background-size: cover; background-repeat: no-repeat"
         >
-            <div class="w-full max-w-md sm:max-w-lg md:max-w-4xl bg-white rounded-lg shadow-lg flex flex-col sm:flex-row h-2/3 sm:h-3/4 overflow-y-auto">
-                <!-- Imagen a la izquierda (solo en pantallas más grandes) -->
+            <div class="w-5/6 max-w-md sm:max-w-lg md:max-w-4xl bg-white rounded-lg shadow-lg flex flex-col sm:flex-row h-5/6 sm:h-3/4 overflow-y-auto">
+                <!-- Imagen en la parte superior para móviles, en pantallas grandes queda a la izquierda -->
+                <div class="sm:hidden w-full h-full bg-cover bg-center rounded-t-lg relative" :style="{ backgroundImage: 'url(/login-background.jpg)' }">
+                    <!-- Botón de cerrar en la parte superior derecha de la imagen en móvil -->
+                    <button class="absolute top-2 right-3 text-gray-600 font-bold text-xl" @click="closeModal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
                 <div class="hidden sm:block sm:w-1/2 bg-cover bg-center rounded-t-lg sm:rounded-l-lg sm:h-full" :style="{ backgroundImage: 'url(/login-background.jpg)' }"></div>
 
-                <!-- Formulario a la derecha -->
+                
+                <!-- Formulario a la derecha (solo en pantallas más grandes) -->
                 <div class="w-full sm:w-1/2 p-6 flex flex-col justify-center relative h-full rounded-lg sm:rounded-none overflow-y-auto">
-                    <!-- Botón cerrar en la esquina superior derecha -->
-                    <button class="absolute top-2 right-3 text-gray-600 font-bold text-xl" @click="closeModal">
+                    <!-- Botón cerrar en la esquina superior derecha para pantallas grandes -->
+                    <button class="sm:absolute top-2 right-3 text-gray-600 font-bold text-xl sm:block hidden" @click="closeModal">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                     <h2 class="text-2xl font-bold mb-4">Registrarte</h2>
