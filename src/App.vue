@@ -2,8 +2,11 @@
     <ModalLogin :showModal="showModal" @update:showModal="showModal = $event" @update:setUser="setUser($event)" />
     <div class="app-container">
         <div class="header">
-            <img src="/logo_ta_co.webp" alt="Logo" />
+            <a href="https://www.instagram.com/theans_wer/?igsh=MXVwcjc4OW01OXA4bw%3D%3D">
+                <img src="/logo_ta_co.webp" alt="Logo" />
+            </a>
         </div>
+
         <div class="container-button">
             <!-- Condición para mostrar el botón de Join o el de Bienvenida -->
             <button v-if="!user" @click="showModal = true" class="button-waitlist font-league-spartan">JOIN WAITLIST</button>
@@ -11,7 +14,9 @@
                 {{ user.name }} <br />
                 GRACIAS POR UNIRTE A THE ANsWER.
             </button>
-            <p class="small-button-text">**¡REGÍSTRATE Y RECIBE BONOS EXCLUSIVOS!**</p>
+            <!-- <p class="small-button-text">**¡REGÍSTRATE Y RECIBE BONOS EXCLUSIVOS!**</p> -->
+            <!-- <p class="small-button-text">** ¡Únete, participa y sorpréndete.! **</p> -->
+            <p class="small-button-text">** QUÉ ESPERAS? ÚNETE Y DESCUBRE!. **</p>
         </div>
         <div class="countdown">
             <h2>
