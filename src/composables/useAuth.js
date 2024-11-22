@@ -12,7 +12,7 @@ export const useAuth = () => {
     // Función para registrar un usuario
     const register = async (details) => {
         try {
-            const { data } = await axios.post('http://127.0.0.1:8000/api/register', details);
+            const { data } = await axios.post('https://api.theanswer.com.co/api/register', details);
             console.log(data);
 
             // Si la respuesta contiene un token, lo guardamos en localStorage y en el estado reactivo
