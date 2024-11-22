@@ -29,7 +29,7 @@
                     </button>
                 </div>
 
-                <div class="hidden sm:block sm:w-1/2 bg-cover bg-center rounded-t-lg sm:rounded-l-lg sm:h-full" style="background-image: url('/login-background.jpg')""></div>
+                <div class="hidden sm:block sm:w-1/2 bg-cover bg-center rounded-t-lg sm:rounded-l-lg sm:h-full" style="background-image: url('/login-background.jpg')"></div>
 
                 <!-- Formulario a la derecha (solo en pantallas más grandes) -->
                 <div class="w-full sm:w-1/2 p-6 flex flex-col justify-center relative h-full rounded-lg sm:rounded-none overflow-y-auto">
