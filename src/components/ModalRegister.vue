@@ -18,18 +18,18 @@
         <div
             v-if="showModal"
             class="fixed inset-0 flex items-center justify-center z-50 bg-opacity-95"
-            style="z-index: 9999; background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/noise7.gif'); background-size: cover; background-repeat: no-repeat"
+            style="z-index: 9999; background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../../public/noise7.gif'); background-size: cover; background-repeat: no-repeat"
         >
             <div class="w-5/6 max-w-md sm:max-w-lg md:max-w-4xl bg-white rounded-lg shadow-lg flex flex-col sm:flex-row sm:h-3/4 overflow-y-auto" style="height: 90%">
                 <!-- Imagen en la parte superior para móviles, en pantallas grandes queda a la izquierda -->
-                <div class="sm:hidden w-full h-full bg-cover bg-center rounded-t-lg relative" style="background-image: url('/login-background.jpg')">
+                <div class="sm:hidden w-full h-full bg-cover bg-center rounded-t-lg relative" style="background-image: url('./login-background.jpg')">
                     <!-- Botón de cerrar en la parte superior derecha de la imagen en móvil -->
                     <button class="absolute top-2 right-3 text-gray-600 font-bold text-xl" @click="closeModal">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
 
-                <div class="hidden sm:block sm:w-1/2 bg-cover bg-center rounded-t-lg sm:rounded-l-lg sm:h-full" style="background-image: url('/login-background.jpg')"></div>
+                <div class="hidden sm:block sm:w-1/2 bg-cover bg-center rounded-t-lg sm:rounded-l-lg sm:h-full" style="background-image: url('./login-background.jpg')"></div>
 
                 <!-- Formulario a la derecha (solo en pantallas más grandes) -->
                 <div class="w-full sm:w-1/2 p-6 flex flex-col justify-center relative h-full rounded-lg sm:rounded-none overflow-y-auto">
