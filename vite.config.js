@@ -4,7 +4,7 @@ import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
 
 export default defineConfig({
-    base: './',
+    base: '/landing_page_theanswer/dist/',
     plugins: [vue()],
     css: {
         postcss: {
